@@ -44,11 +44,9 @@ body {
     text-transform:uppercase;
     width:100%;
 }
-
 /* Portrait layout (default) */
 .app {
-    background:url(../img/images3.jpeg) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
+    /*position:absolute;              position in the center of the screen */
     left:50%;
     top:50%;
     height:50px;                   /* text area height */
@@ -68,14 +66,29 @@ body {
                                       /* offset horizontal: half of image width and text area width */
     }
 }
+#top {
+	margin:0px 10px;
+    padding:4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color:#333333;
+}
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
+h3 {
+    font-size:48px;
     overflow:visible;
     padding:0px;
     text-align:center;
+	color:#FFFFFF;
+    font-size:20px;
+}
+
+#bottom {
+	margin:600px 0px;
+    padding:4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color:#333333;
 }
 
 .event {
@@ -113,3 +126,4 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+

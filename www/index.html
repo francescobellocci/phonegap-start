@@ -27,21 +27,28 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Schede Immobiliari</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-				<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../img/images2.jpeg" alt="Smiley" width="32" height="32">
-                <p class="event listening">Connecting to your Heart</p>
-                <p class="event received">Open Your Heart to the World</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+    <div data-role="page" id="homePage">
+		<div id="top" data-theme="" data-role="header">
+			<h3>Schede immobiliari</h3>
+		</div>
+ 
+		<div data-role="content">
+			<a data-role="button" href="#scheda" data-icon="plus" data-iconpos="left">Nuova scheda</a>
+			<a data-role="button" href="#elencoSchede" data-icon="bars" data-iconpos="left">Elenco schede</a>
+			<a id="btnInviaSchede" data-role="button" href="#page1" data-icon="forward" data-iconpos="left">Invia schede</a>
+		</div>
+ 
+		<div id="bottom" data-theme="a" data-role="footer" data-position="fixed">
+			<h3>Schede immobiliari</h3>
+		</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
     </body>
 </html>
