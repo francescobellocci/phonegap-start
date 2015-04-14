@@ -32,13 +32,22 @@
     <body>
     <div data-role="page" id="homePage">
 		<div id="top" data-theme="" data-role="header">
+			<div id="btnClose">
+				<a data-role="button" href="#scheda" data-icon="cross" data-iconpos="left">X</a>
+			</div>
 			<h3>Schede immobiliari</h3>
 		</div>
  
-		<div data-role="content">
-			<a data-role="button" href="#scheda" data-icon="plus" data-iconpos="left" style="border:solid;border-width:2px;border-radius:10px;">Nuova scheda</a>
-			<a data-role="button" href="#elencoSchede" data-icon="bars" data-iconpos="left" style="border:solid;border-width:2px;border-radius:10px;">Elenco schede</a>
-			<a id="btnInviaSchede" data-role="button" href="#page1" data-icon="forward" data-iconpos="left" style="border:solid;border-width:2px;border-radius:10px;">Invia schede</a>
+		<div id="elenco" data-role="content">
+			<div id="btnNuovaScheda">
+				<a data-role="button" href="#scheda" data-icon="plus" data-iconpos="left">Nuova scheda</a>
+			</div>
+			<div id="btnElencoSchede">
+				<a data-role="button" href="#elencoSchede" data-icon="bars" data-iconpos="left">Elenco schede</a>
+			</div>
+			<div id="btnInviaSchede">
+				<a data-role="button" href="#page1" data-icon="forward" data-iconpos="left">Invia schede</a>
+			</div>
 		</div>
  
 		<div id="bottom" data-theme="a" data-role="footer" data-position="fixed">
